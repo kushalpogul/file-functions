@@ -102,9 +102,11 @@ In Controller file:
 	// delete returns true -> file is deleted, false -> failure	
 	$file_obj->delete();                   
 
-	// copyFile returns true -> file copied , false -> failure	$file_obj->copyFile('D:\codebase\htdocs\new_cake\webroot\test\test_file.txt','D:\codebase\htdocs\new_cake\webroot\test\test_file_copy.txt');         
-	// renameFile create copy of file
-	$file_obj->renameFile('D:\codebase\htdocs\new_cake\webroot\test\test_file_copy.txt', 'D:\codebase\htdocs\new_cake\webroot\test\test_file1.txt'); 
+	// copyFile returns true -> file copied , false -> failure	
+	$file_obj->copyFile('path/of/file/src','path/of/file/dst');
+	
+	// renameFile returns true -> file is renamed , false -> failure	
+	$file_obj->renameFile('path/of/file/file_name','path/of/file/new_filename');
 
 	// isFileReadable returns true -> file is readable, false -> file is not readable	
 	$file_obj->isFileReadable();          
