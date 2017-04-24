@@ -36,9 +36,9 @@ $this->loadComponent('FileFunctions.File' );
 Requirements
 -----
 
-CakePHP 3
-PHP 5.4
-FTP Server
+1) CakePHP 3
+2) PHP 5.4
+3) FTP Server
 
 
 Functions in Plugin
