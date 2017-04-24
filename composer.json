@@ -4,11 +4,11 @@
     "homepage": "https://github.com/kushalpogul/file-functions",
     "type": "cakephp-plugin",
     "license": "MIT",
-	  "authors": [
-    {
-      "name": "Kushal Pogul",
-      "role": "Author"
-    }
+	"authors": [
+		{
+		  "name": "Kushal Pogul",
+		  "role": "Author"
+		}
 	]
     "require": {
         "php": ">=5.4.16",
