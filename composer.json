@@ -9,7 +9,7 @@
 		  "name": "Kushal Pogul",
 		  "role": "Author"
 		}
-	]
+	],
     "require": {
         "php": ">=5.4.16",
         "cakephp/cakephp": "~3.1",
