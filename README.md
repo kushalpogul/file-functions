@@ -46,9 +46,9 @@ Functions in Plugin
 
 Plugin allows upload, download, delete file from FTP Server, file manipulation operations like create, append, prepend, save content into file, last modified time, delete file, make copy of file, rename file, check file is readable and writable and change permission of file.
 
-    lessphp_*
-
 Usage:
+------
+
 1) For FTP File Upload, Download & Delete:
 
 In Controller file:	
