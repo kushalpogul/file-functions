@@ -116,5 +116,9 @@ In Controller file:
 
 	// changePermission returns true -> file permission is changed, false -> failure     	
 	$file_obj->changePermission('777'); 
+	
+	// getFileType returns file type, false -> failure	  	
+	echo $file_obj->getFileType(); 
+	
 ```
 
