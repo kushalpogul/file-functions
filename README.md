@@ -1,12 +1,7 @@
 FTP File upload, Download, Delete & File manipulation operations plugin for CakePHP 3.X
 =======================================================================================
 
-[![Build status](https://img.shields.io/travis/kushalpogul/file-functions.svg?style=flat-square)](https://travis-ci.org/kushalpogul/file-functions)
-[![Code coverage](https://img.shields.io/coveralls/kushalpogul/file-functions.svg?style=flat-square)](https://coveralls.io/github/kushalpogul/file-functions)
-[![License](https://img.shields.io/packagist/l/kushalpogul/file-functions.svg?style=flat-square)](https://github.com/kushalpogul/file-functions/blob/master/LICENSE)
-[![Latest Stable Version](https://img.shields.io/github/release/kushalpogul/file-functions.svg?style=flat-square)](https://github.com/kushalpogul/file-functions/releases)
-[![Total Downloads](https://img.shields.io/packagist/dt/kushalpogul/file-functions.svg?style=flat-square)](https://packagist.org/packages/kushalpogul/file-functions)
-[![Code Climate](https://img.shields.io/codeclimate/github/kushalpogul/file-functions.svg?style=flat-square)](https://codeclimate.com/github/kushalpogul/file-functions)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE.md)
 
 Plugin helps to upload, download, delete file from FTP Server. This plugin also allows various useful file manipulation operations.
 
