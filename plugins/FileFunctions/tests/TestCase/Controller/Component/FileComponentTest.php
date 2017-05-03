@@ -114,6 +114,16 @@ class FileComponentTest extends TestCase
         $this->assertContains($actual, [true, false]);
     }
 
+    public function testGetFileType()
+    {
+        $file_obj = $this->component->getObject();                                     //  Create Object
+        $file_obj->set('D:\codebase\htdocs\new_cake\webroot\test\new_file.txt');       //  Set path of file to check when it was modified
+        $actual    = $file_obj->getFileType();
+        $all_params =   pathinfo('D:\codebase\htdocs\new_cake\webroot\test\new_file.txt');
+        $expected_value = $all_params['extension'];
+        $this->assertContains($actual, [$expected_value, false]);
+    }
+
     public function testFtpFileUpload()
     {
         $file_obj = $this->component->getObject();                                     //  Create Object
