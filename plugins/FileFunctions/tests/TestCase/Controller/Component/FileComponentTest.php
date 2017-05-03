@@ -127,7 +127,7 @@ class FileComponentTest extends TestCase
     public function testFtpFileUpload()
     {
         $file_obj = $this->component->getObject();                                     //  Create Object
-        $ftp_conn = $file_obj->ftpConnect('192.168.2.4', 'ib', 'Inf@be@ns.$%^');      // Connect to FTP using host name, username, password
+        $ftp_conn = $file_obj->ftpConnect('hostname', 'username', 'password');      // Connect to FTP using host name, username, password
         $actual   = $file_obj->ftpFileUpload($ftp_conn, 'server_file.txt', 'D:\codebase\htdocs\new_cake\webroot\test\new_file.txt');
         $file_obj->ftpClose($ftp_conn);
         $this->assertContains($actual, [true, false]);
@@ -136,7 +136,7 @@ class FileComponentTest extends TestCase
     public function testFtpFileDownload()
     {
         $file_obj = $this->component->getObject();                                     //  Create Object
-        $ftp_conn = $file_obj->ftpConnect('192.168.2.4', 'ib', 'Inf@be@ns.$%^');      // Connect to FTP using host name, username, password
+        $ftp_conn = $file_obj->ftpConnect('hostname', 'username', 'password');      // Connect to FTP using host name, username, password
         $actual   = $file_obj->ftpFileDownload($ftp_conn, 'server_file.txt', 'D:\codebase\htdocs\new_cake\webroot\test\local.txt');
         $file_obj->ftpClose($ftp_conn);
         $this->assertContains($actual, [true, false]);
@@ -146,7 +146,7 @@ class FileComponentTest extends TestCase
     public function testFtpFileDelete()
     {
         $file_obj = $this->component->getObject();                                     //  Create Object
-        $ftp_conn = $file_obj->ftpConnect('192.168.2.4', 'ib', 'Inf@be@ns.$%^');      // Connect to FTP using host name, username, password
+        $ftp_conn = $file_obj->ftpConnect('hostname', 'username', 'password');      // Connect to FTP using host name, username, password
         $actual   = $file_obj->ftpFileDelete($ftp_conn, 'server_file.txt');
         $file_obj->ftpClose($ftp_conn);
         $this->assertContains($actual, [true, false]);
